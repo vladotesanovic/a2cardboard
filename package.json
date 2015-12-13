@@ -1,0 +1,33 @@
+{
+  "name": "ACdetective",
+  "version": "1.0.0",
+  "description": "Angular2 Cardboard application",
+  "main": "",
+  "scripts": {
+    "start": "gulp && cd com.vlado.acdetective && ../node_modules/.bin/cordova build android && cp platforms/android/build/outputs/apk/android-debug.apk ../builds",
+    "test": "cd com.vlado.acdetective/www && php -S localhost:8888"
+  },
+  "keywords": [],
+  "author": "Vlado Tešanović",
+  "license": "Apache License",
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.52",
+    "cordova": "^5.4.1",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.33.13",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-alpha.14",
+    "semantic-ui-loader": "^2.1.6",
+    "systemjs": "^0.19.6",
+    "three.js": "^0.73.0",
+    "zone.js": "^0.5.8"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tslint": "^4.1.2",
+    "gulp-typescript": "^2.10.0",
+    "tslint": "^3.1.1",
+    "typescript": "^1.7.3"
+  }
+}

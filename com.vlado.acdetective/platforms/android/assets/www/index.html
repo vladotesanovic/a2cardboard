@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <title>AC Detective ( EP 1 )</title>
+        <link rel="stylesheet" type="text/css" class="ui" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" class="ui" href="css/loader.min.css">
+        <style> body { overflow: hidden !important; background-color: #f4f4f4; } #example {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      } </style>
+        <script src="js/vendor/system.js"></script>
+        <script src="js/vendor/three.min.js"></script>
+        <script src="js/vendor/StereoEffect.js"></script>
+        <script src="js/vendor/DeviceOrientationControls.js"></script> 
+        <script src="js/vendor/OrbitControls.js"></script>
+        <script>
+        //configure system loader
+        System.config({
+            defaultJSExtensions: true
+        });
+        </script>
+        <script src="js/vendor/angular2.min.js"></script>
+    </head>
+    <body>
+        <app>
+            <div class="ui active inverted dimmer">
+                <div class="ui text loader">Loading</div>
+            </div>
+        </app>
+        <script>
+            System.import('js/app/app');
+        </script>
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>
