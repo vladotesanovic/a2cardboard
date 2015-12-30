@@ -1,4 +1,5 @@
-import { Component, View, bootstrap } from "angular2/angular2";
+import { Component, View, } from "angular2/core";
+import { bootstrap } from "angular2/platform/browser";
 import { Engine } from "./services/engine";
 
 @Component({
@@ -12,9 +13,10 @@ export class AppComponent {
 
     constructor() {
         new Engine(document.getElementById("container"));
-        let audio = new Audio("audio/theme.mp3");
+
+        let audio = new Audio("audio/background.mp3");
         audio.loop = true;
-        audio.volume = 0.5;
+        audio.volume = .7;
         audio.play();
     }
 }
