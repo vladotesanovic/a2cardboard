@@ -3,10 +3,12 @@ Sample application for Cardboard builded with Angular 2
 
 ```bash
 npm install
-npm start
+npm start 
+or
+npm test
 ```
 
-# /builds
+### /builds
 Folder contains generated apk file.
 
 Special thanks to Alexandre Duret-Lutz for picture.

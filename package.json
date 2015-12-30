@@ -5,7 +5,7 @@
   "main": "",
   "scripts": {
     "start": "gulp && cd com.vlado.a2cardboard && ../node_modules/.bin/cordova build android && cp platforms/android/build/outputs/apk/android-debug.apk ../builds",
-    "test": "cd com.vlado.a2cardboard/www && php -S localhost:8888"
+    "test": "cd com.vlado.a2cardboard/www && python -m SimpleHTTPServer 8888"
   },
   "keywords": [],
   "author": "Vlado Tešanović",
